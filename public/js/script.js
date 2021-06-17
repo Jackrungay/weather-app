@@ -4,6 +4,7 @@ const search = document.querySelector("input")
 const locationText = document.getElementById("location")
 const forecastText = document.getElementById("forecast")
 
+console.log("Hello")
  
 weatherForm.addEventListener("submit", (e) => {
     e.preventDefault()

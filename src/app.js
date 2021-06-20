@@ -66,10 +66,10 @@ app.get("/weather", (req, res) => {
             })
         }
         
-        const { longitude, latitude, location } = data
+        const { latitude, longitude, location } = data
         
 
-        forecast(longitude, latitude, (error, forecastData) => {
+        forecast(latitude, longitude, (error, forecastData) => {
             
             if (error) {
                 return res.send({

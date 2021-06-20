@@ -18,9 +18,11 @@ const geocode = (address, callback) => {
         } else if (body.features.length === 0) {
             callback("No responses found for this search query. Try again", undefined)
         } else {
-            const longitude = body.features[0].center[0]
             const latitude = body.features[0].center[1]
+            const longitude = body.features[0].center[0]
             const placeName = body.features[0].place_name
+
+            console.log(latitude, longitude, placeName, "Is this working?")
 
             callback(undefined, {
                 latitude, // object property shorthand

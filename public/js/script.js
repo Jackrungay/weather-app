@@ -23,6 +23,9 @@ weatherForm.addEventListener("submit", (e) => {
             return forecastText.innerText = data.error
         }
         
+        console.log(data);
+
+
         locationText.innerText = data.location
         forecastText.innerText = data.forecast
 
